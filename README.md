@@ -4,7 +4,7 @@ Decision trees are widely used in machine learning due to their interpretability
   However, when the underlying data distribution changes---a phenomenon known as concept drift---their performance can degrade significantly.
   Retraining the model from scratch discards the learned structure and offers no insight into which nodes were actually affected.
   Prior work, APPETITE, used spectrum-based fault localization to identify and modify a single faulty node, but cannot handle drift that affects multiple nodes simultaneously or that demands structural changes to the tree.
-  We propose BTAD (Breadth tRee Oriented Adaptation for Drift), which formalizes the Decision Tree Concept Drift Problem as a Model-Based Diagnosis task and employs BARINEL, a Bayesian algorithm that ranks multi-node fault hypotheses across the entire tree.
+  We propose BTAD (Bayesian Tree Adaptation for Drift), which formalizes the Decision Tree Concept Drift Problem as a Model-Based Diagnosis task and employs BARINEL, a Bayesian algorithm that ranks multi-node fault hypotheses across the entire tree.
   For repair, BTAD applies \subfitfull, which replaces affected subtrees with new ones fitted to the post-drift distribution.
   BTAD relies on lightweight node-level statistics and requires no access to the original training data.
   Experiments show that BTAD outperforms APPETITE both in terms of recovery performance as well as the explanation. In addition, BTAD achieves accuracy recovery comparable to full retraining, which, unlike BTAD, provides no insight into the nature of the drift and requires access to the original data.
