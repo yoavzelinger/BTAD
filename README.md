@@ -1,5 +1,5 @@
 # Explainable Adaptation to Concept Drift in Decision Tree Ensembles
-## * UAI 2026*
+## *UAI 2026*
 
 Decision trees are widely used in machine learning due to their interpretability.
   However, when the underlying data distribution changes---a phenomenon known as concept drift---their performance can degrade significantly.
